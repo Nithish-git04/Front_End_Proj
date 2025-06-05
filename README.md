@@ -1,0 +1,2 @@
+This repository is created for a frontend PS-1 project for EA.
+The assets for this webpage is taken from the figma file : https://www.figma.com/design/WxdWvFebOAaxGvYvbp1dll/PS---1-Ashish-Enterprises?node-id=1-1221&t=hzaDrsUWbtBD4Yl3-0
