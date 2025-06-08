@@ -48,8 +48,11 @@ li:hover {
     height: 90px;
     background-color: #0A0908;
     color: #EFE9E1;
-    /* padding: 10px 20px; */
-    position: relative;
+    padding: 10px 20px; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #EFE9E180;
 }
 
 .menu_btn {
@@ -73,13 +76,12 @@ li:hover {
     width: 16px;
 }
 
-.nav_header {
+/*.nav_header {
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid #EFE9E180;
-    padding-bottom: 50px;
-}
+}*/
 
 #hamburger_menu {
     display: flex;
