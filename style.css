@@ -22,7 +22,9 @@ body{
     padding: 10px 20px;
     margin-left:20px;
     margin-right:20px;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     border-bottom: 1px solid #EFE9E180;
 }
 
