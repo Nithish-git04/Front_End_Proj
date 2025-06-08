@@ -11,3 +11,14 @@ hamburger.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   insideNav.classList.remove('show');
 });
+
+// when we scroll past the get in touch, the new one appears in the nav bar
+const getintouch = document.getElementById('get_in_touch_1'); // Get the button.
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 10) { 
+        getintouch.classList.add('show');
+    } else {
+        getintouch.classList.remove('show');
+    }
+});

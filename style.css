@@ -47,6 +47,9 @@ li:hover {
 .nav-bar {
     height: 90px;
     background-color: #0A0908;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #EFE9E1;
     padding: 10px 20px; 
     margin: 0px 20px;
@@ -118,11 +121,12 @@ li:hover {
 }
 
 .img_c {
-    position: relative;
+    margin: 0 auto;
+    /*position: relative;
     height: 66.35px;
     top: 20px;
     left: 50%;
-    translate: -50%;
+    translate: -50%;*/
 }
 
 .main_txt {
@@ -157,10 +161,7 @@ li:hover {
 
     text-shadow:
     1px 0 white, -1px 0 white,
-    0 1px white, 0 -1px white;/
-
-
-    
+    0 1px white, 0 -1px white;/    
 }
 
 .btns {
@@ -170,12 +171,33 @@ li:hover {
     translate: 0 -130px;
 }
 
-#get_in_touch {
+#get_in_touch_1 {
+    display: none;
+    position: absolute;
+    left: 80%;
+    top:50%;
+    transform: translateY(-50%);
+    background: #CD9900;
+    color: #0A0908;
+    border: 0px;
+    height: 40px;
+    width: 170px;
+    font-family: 'Helevetica', sans-serif;
+    font-weight: 50;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#get_in_touch_1.show{
+    display: block;
+}
+
+#get_in_touch_2 {
     background: #CD9900;
     color: #0A0908;
     height: 70px;
     width: 306px;
-    border: 1.7px solid #EFE9E1;
+    border: 0;
     font-family: 'Helevetica', sans-serif;
     font-weight: 70;
     font-size: 24px;
