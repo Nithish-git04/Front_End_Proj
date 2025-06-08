@@ -16,10 +16,12 @@ body{
 }
 
 .nav-bar {
-    height: 90px;
+    height: 70px;
     background-color: #0A0908;
     color: #EFE9E1;
     padding: 10px 20px;
+    margin-left:20px;
+    margin-right:20px;
     position: relative;
     border-bottom: 1px solid #EFE9E180;
 }
@@ -38,6 +40,7 @@ body{
 #hamburger_menu {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     cursor: pointer;
 }
