@@ -75,6 +75,7 @@ li:hover .scale_hover {
     transition: transform 0.3s ease, color 0.3s ease;
     transform-origin: center;
 }
+
 .close-btn:hover {
     transform: scale(2);
     color: #CD9900;
@@ -107,10 +108,10 @@ li:hover .scale_hover {
     height: 12px;
     width: 22px;
     scale: 2;
-    transition: transfrom 0.1s ease-in, color 0.1s ease;
 }
 
 .menu_btn:hover {
+    transition: transfrom 0.1s ease-in, color 0.1s ease;
     transform: scale(1.3);
     cursor: pointer;
     color: #CD9900;
@@ -190,20 +191,20 @@ li:hover .scale_hover {
 #the_exq {
     font-family: 'Rische-Bold';
     font-weight: 400;
-    font-size: 154.74px;
+    font-size: 8.5vw;
     position: absolute;
     color: #EFE9E1;
-    translate: 0 -90px;
+    translate: 0 -65px;
 }
 
 #rent {
     font-family: 'Rische-Bold';
     font-weight: 400;
     position: absolute;
-    font-size: 610.05px;
+    font-size: 33.5vw;
     translate: 0 -90px;
 
-    color: black;
+    color: #0A0908;
 
     text-shadow:
     1px 0 white, -1px 0 white,
@@ -215,6 +216,11 @@ li:hover .scale_hover {
     bottom: 20px;
     right: 20px;
     translate: 0 -130px;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #get_in_touch_1 {
@@ -250,31 +256,33 @@ li:hover .scale_hover {
 #get_in_touch_2 {
     background: #CD9900;
     color: #0A0908;
-    height: 70px;
-    width: 306px;
+    height: 8vh;
+    width: 16vw;
     border: 0;
     font-family: 'Helevetica', sans-serif;
     font-weight: 70;
-    font-size: 24px;
+    font-size: 1.25vw;
 }
 
 #get_in_touch_2:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 #learn_more {
     background: #0A0908;
     color: #EFE9E1;
-    border: 1.7px solid #EFE9E1;
-    height: 70px;
-    width: 306px;
+    border: 2px solid #EFE9E1;
+    height: 8vh;
+    width: 16vw;
     font-family: 'Helevetica', sans-serif;
     font-weight: 70;
-    font-size: 24px;
+    font-size: 1.25vw;
 }
 
 #learn_more:hover {
-    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    transform: scale(1.08);
     cursor: pointer;
 }
