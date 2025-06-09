@@ -16,7 +16,7 @@ closeBtn.addEventListener('click', () => {
 const getintouch = document.getElementById('get_in_touch_1'); // Get the button.
 
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 970) { 
+    if (window.pageYOffset > 1050) { 
         getintouch.classList.add('show');
     } else {
         getintouch.classList.remove('show');
