@@ -19,6 +19,7 @@
 body{
     background: #0A0908;
     margin: none;
+    padding-top: 0;    
 }
 
 #nav_links {
@@ -138,7 +139,7 @@ li:hover {
 #main_page {
     display: flex;
     position: relative;
-    height: 100vh;
+    height: 120vh;
 }
 
 #the_exq {
@@ -161,7 +162,7 @@ li:hover {
 
     text-shadow:
     1px 0 white, -1px 0 white,
-    0 1px white, 0 -1px white;/    
+    0 1px white, 0 -1px white;    
 }
 
 .btns {
