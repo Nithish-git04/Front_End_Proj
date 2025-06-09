@@ -89,7 +89,7 @@ li:hover .scale_hover {
     padding: 10px 20px; 
     margin: 0px 20px;
     position: sticky;
-    top: 0;
+    top: 10px;
     z-index: 1000;
     border-bottom: 1px solid #EFE9E180;
 }
@@ -106,11 +106,11 @@ li:hover .scale_hover {
     height: 12px;
     width: 22px;
     scale: 2;
-    transition: transfrom 0.3s ease, color 0.1s ease;
+    transition: transfrom 0.1s ease-in, color 0.1s ease;
 }
 
 .menu_btn:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
     cursor: pointer;
     color: #CD9900;
 }
@@ -221,12 +221,12 @@ li:hover .scale_hover {
     position: absolute;
     left: 80%;
     top:50%;
-    transform: translateY(-50%);
+    translate: 0 -50%;
     background: #CD9900;
     color: #0A0908;
     border: 0px;
     height: 40px;
-    width: 170px;
+    width: 180px;
     font-family: 'Helevetica', sans-serif;
     font-weight: 50;
     cursor: pointer;
@@ -234,7 +234,16 @@ li:hover .scale_hover {
 }
 
 #get_in_touch_1.show{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+#get_in_touch_1:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 #get_in_touch_2 {
@@ -248,6 +257,11 @@ li:hover .scale_hover {
     font-size: 24px;
 }
 
+#get_in_touch_2:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 #learn_more {
     background: #0A0908;
     color: #EFE9E1;
@@ -257,4 +271,9 @@ li:hover .scale_hover {
     font-family: 'Helevetica', sans-serif;
     font-weight: 70;
     font-size: 24px;
+}
+
+#learn_more:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
