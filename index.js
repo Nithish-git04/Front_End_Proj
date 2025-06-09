@@ -12,7 +12,7 @@ closeBtn.addEventListener('click', () => {
   insideNav.classList.remove('show');
 });
 
-// when we scroll past the get in touch, the new one appears in the nav bar
+// when we scroll past the "get in touch" button, the new one appears in the nav bar
 const getintouch = document.getElementById('get_in_touch_1'); // Get the button.
 
 window.addEventListener('scroll', () => {
