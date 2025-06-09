@@ -16,7 +16,7 @@ closeBtn.addEventListener('click', () => {
 const getintouch = document.getElementById('get_in_touch_1'); // Get the button.
 
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 10) { 
+    if (window.pageYOffset > 10) { //will increase offset once the other sections are added
         getintouch.classList.add('show');
     } else {
         getintouch.classList.remove('show');
