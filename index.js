@@ -4,6 +4,7 @@ const closeBtn = insideNav.querySelector('.close-btn');
 const menuBtn = document.querySelector(".menu_btn");
 const overlay = document.getElementById("overlay");
 const navLinks = document.querySelectorAll('#inside_nav a');
+const getintouch = document.getElementById('get_in_touch_1');
 
 // Open menu on hamburger click
 hamburger.addEventListener('click', () => {
@@ -36,7 +37,6 @@ closeBtn.addEventListener("click", () => {
 
 
 // when we scroll past the "get in touch" button, the new one appears in the nav bar
-const getintouch = document.getElementById('get_in_touch_1'); // Get the button.
 
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 900) { 
