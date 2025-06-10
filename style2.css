@@ -223,7 +223,7 @@ li:hover .scale_hover {
 #form{
     background-color: #EFE9E1;
     width: 60vw;
-    height: 150vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -242,7 +242,7 @@ li:hover .scale_hover {
 }
 
 #booking_page_design{
-    height: 150vh;
+    height: 160vh;
     width: auto;
 }
 
@@ -275,4 +275,87 @@ li:hover .scale_hover {
     background-color: #98473E;
     color:#EFE9E1;
     padding: 1% 1.5%;
+}
+
+/*footer css*/
+.footer-container {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #0A0908;
+    color: #EFE9E1;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    object-fit: contain;
+
+}
+
+.logo-text {
+    font-family: 'Rische-Bold', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.divider {
+    width: 24px;
+    height: 4px;
+    background-color: #191919;
+    margin: 20px auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 155px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    font-family: 'Helvetica-now', sans-serif;
+    font-size: 16px;
+    font-weight: 50;
+    line-height: 25px;
+    color: #EFE9E1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #CD9900;
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
