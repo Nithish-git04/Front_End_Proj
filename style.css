@@ -11,6 +11,12 @@
 }
 
 @font-face {
+    font-family : 'Helvetica-now';
+    src: url('Font/helvetica-now-text/HelveticaNowText-ExtraLight.woff');
+    font-weight: 50;
+}
+
+@font-face {
     font-family: 'Helvetica';
     src: url('Font/Helevetica/Helvetica.ttf');
     font-weight: 70;
@@ -23,9 +29,9 @@
 }
 
 .who-we-are-text {
-    font-family: 'Helvetica', sans-serif;
-    font-weight: 70;
-    font-size: 20px;
+    font-family: 'Helvetica-now', sans-serif;
+    font-weight: 50;
+    font-size: 25px;
     translate: 0 -30px;
 }
 
@@ -411,15 +417,15 @@ li:hover .scale_hover {
 .navigation {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 155px;
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
 .nav-link {
-    font-family: 'Helevetica', Arial, sans-serif;
+    font-family: 'Helvetica-now', sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 50;
     line-height: 25px;
     color: #EFE9E1;
     text-decoration: none;
@@ -470,7 +476,7 @@ li:hover .scale_hover {
 .who-text {
     margin: 0;
     padding: 0;
-    max-width: 500px;
+    max-width: 790px;
     font-size: 20px;
     line-height: 1.6;
     text-align: justify;
@@ -496,6 +502,7 @@ li:hover .scale_hover {
     object-position: center 60%;
     border: 1px solid #EFE9E1;
     overflow: hidden;
+    translate: -30px 0;
     transition: transform 0.3s ease;
     }
 
