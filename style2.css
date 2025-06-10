@@ -265,3 +265,14 @@ li:hover .scale_hover {
   border-bottom: 1px solid #ccc;
   background-color: #EFE9E1;
 }
+
+#confirm{
+    position: relative;
+    top: 15vw;
+    border: none;
+    cursor: pointer;
+    transform: scale(2);
+    background-color: #98473E;
+    color:#EFE9E1;
+    padding: 1% 1.5%;
+}
