@@ -437,16 +437,25 @@ li:hover .scale_hover {
 }
 
 .social-icons {
-    width: 226px;
-    height: 30px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 20px;
 }
 
 .social-icons img {
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
 
 .who-we-are-section {
     margin: 0px auto;
