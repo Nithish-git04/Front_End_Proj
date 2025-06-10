@@ -222,18 +222,20 @@ li:hover .scale_hover {
 
 #form{
     background-color: #EFE9E1;
-    width: 50vw;
-    height: 100vh;
+    width: 45vw;
+    height: 150vh;
     display: flex;
     justify-content: center;
 }
 
 #booking_page_bmw{
-    height: 40vh;
+    position: relative;
+    top:60px;
     width: auto;
+    height: 50vh;
 }
 
 #booking_page_design{
-    height: 100vh;
+    height: 150vh;
     width: auto;
 }
