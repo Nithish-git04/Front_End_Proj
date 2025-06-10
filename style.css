@@ -461,23 +461,11 @@ li:hover .scale_hover {
 }
 
 .who-title {
-<<<<<<< HEAD
     font-family: 'Rische-Bold', sans-serif;
     font-size: 200px;
     font-weight: normal;
     color: #0A0908;
-    text-shadow: 
-     1px 0 #EFE9E1, -1px 0 #EFE9E1,
-    0 1px #EFE9E1, 0 -1px #EFE9E1;
     margin-bottom: 40px;
-=======
-    font-family: 'Rische-semibold', sans-serif;
-    font-weight: 400;
-    font-size: 13vw;
-    color: #0A0908;
-    display: flex;
-    justify-content: center;
->>>>>>> e17b50f8d78315ae4712a47bce5df7494b719781
     text-align: center;
     text-shadow:
     0.5px 0 #EFE9E1, -0.5px 0 #EFE9E1,
