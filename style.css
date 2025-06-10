@@ -435,3 +435,61 @@ li:hover .scale_hover {
     height: 100%;
     object-fit: contain;
 }
+
+.who-we-are-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    color: #EFE9E1;
+    font-family: 'Helvetica', sans-serif;
+    position: relative;
+ }
+
+.who-title {
+    font-family: 'Rische-Bold', sans-serif;
+    font-size: 230px;
+    font-weight: normal;
+    color: transparent;
+    -webkit-text-stroke: 1px #EFE9E1;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 0.85;
+    max-width: 100%;
+    }
+
+.who-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 80px;
+    }
+
+.car-image {
+    width: 500px;
+    max-width: 50vw;
+    height: 240px;
+    object-fit: cover;
+    object-position: center 60%;
+    border: 1px solid #EFE9E1;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    }
+
+.car-image:hover {
+    transform: scale(1.05);
+     }
+
+.who-text {
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: normal;
+    color: #EFE9E1;
+     }
