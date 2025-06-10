@@ -365,6 +365,7 @@ li:hover .scale_hover {
 
 .footer-container {
     position: relative;
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 40px 0;
@@ -377,9 +378,9 @@ li:hover .scale_hover {
     margin-bottom: 20px;
 }
 
-.frame-child33 {
+.logo-icon {
     width: auto;
-    height: 37px;
+    height: auto;
     display: block;
     margin: 0 auto 10px;
     object-fit: contain;
@@ -420,6 +421,7 @@ li:hover .scale_hover {
 
 .nav-link:hover {
     color: #CD9900;
+    opacity: 0.8;
 }
 
 .social-icons {
@@ -432,20 +434,4 @@ li:hover .scale_hover {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .navigation {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .nav-link {
-        font-size: 14px;
-    }
-
-    .logo-text {
-        font-size: 16px;
-    }
 }
