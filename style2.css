@@ -17,6 +17,12 @@
 }
 
 @font-face {
+    font-family: 'Rische-regular';
+    src: url('Font/Rische\ Font\ Family/Rische-Medium.woff');
+    font-weight: 400;
+}
+
+@font-face {
     font-family: 'Helvetica';
     src: url('Font/Helevetica/Helvetica.ttf');
     font-weight: 70;
@@ -25,7 +31,25 @@
 @font-face {
     font-family: 'Rische-semibold';
     src: url('Font/Rische\ Font\ Family/Rische-Semibold.woff');
-    font-weight: 400;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'HelveticaNowText-Med';
+    src: url('Font/helvetica-now-text/HelveticaNowText-Medium.woff');
+    font-weight: 50;
+}
+
+@font-face {    
+    src: url('Font/helvetica-now-text/HelveticaNowText-Light.woff');
+    font-family: 'Helvetica-now-light';
+    font-weight: 50;
+}
+
+@font-face {
+    src: url('Font/helvetica-now-text/HelveticaNowText-ExtraLight.woff');
+    font-family: 'Helvetica-now-extralight';
+    font-weight: 50;
 }
 
 .who-we-are-text {
@@ -122,7 +146,7 @@ li:hover .scale_hover {
     margin: 0px 20px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 800;
     border-bottom: 1px solid #EFE9E180;
 }
 
@@ -202,7 +226,7 @@ li:hover .scale_hover {
 }
 
 /*rental*/
-#rental h1{
+#rental_heading{
     font-family: 'Rische-semibold';
     font-size: 8.5vw;
     font-weight: normal;
@@ -237,8 +261,10 @@ li:hover .scale_hover {
 }
 
 #X3{
-    font-family: 'HelveticaNowText-Light';
+    font-family: 'HelveticaNowText-Med';
+    font-weight: 50;
     font-size: 4vw;
+    width: 40%;
 }
 
 #booking_page_design{
@@ -247,6 +273,7 @@ li:hover .scale_hover {
 }
 
 #textfields{
+    font-family: 'Helvetica-now', sans-serif;
     position: relative;
     top:10vw;
     display: flex;
@@ -358,4 +385,108 @@ li:hover .scale_hover {
 .social-icons img:hover {
     transform: scale(1.1);
     filter: brightness(1.2);
+}
+
+
+#confirm:hover {
+    transform: scale(2.2);
+    transition: transform 0.3s ease;
+}
+
+#edit {
+    background: #EFE9E1;
+    border-radius: none;
+    font-family: 'Helvetica-now-light';
+    font-weight: 50;
+    max-width: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow:
+    1px 1px 1px #0A0908,
+    -1px 1px 1px #0A0908,
+    1px -1px 1px #0A0908,
+    -1px -1px 1px #0A0908;
+}
+
+#Edit_btn {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 9, 8, 0.8);
+    backdrop-filter: blur(10px); 
+    z-index: 900;
+    display: none; 
+}
+
+#overlay.show {
+    display: block;
+}
+
+#thankyou_page {
+    display: none;
+}
+
+#thankyou_page.show {
+    display: grid;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -10%;
+    width: 46vw;
+    height: 76vh;
+    z-index: 1001;
+    background-color: #EFE9E1;
+}
+
+#thankyou_p {
+    font-family: 'Helvetica-now-extralight';
+    font-weight: 50;
+    margin: 0 auto;
+    font-size: 2.5vh;
+    translate: 0 -140%;
+}
+
+#blur_rest.show {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+}
+
+#close {
+    background: #98473E;
+    color: #EFE9E1;
+    width: 8vw;
+    height: 5vh;
+    border: none;
+    margin: 0 auto;
+    translate: 0 145%;
+}
+
+#close:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#thankyou {
+    margin: 0 auto;
+    color: #0A0908;
+    font-family: 'Rische-regular';
+    font-weight: 400;
+    font-size: 11vh;
+    translate: 0 -30%;
 }

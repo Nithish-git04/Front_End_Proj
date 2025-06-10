@@ -14,8 +14,8 @@
                 <span class="menu_btn">&#9776;</span> <!-- the three lines symbol-->
             </div>
             <img src="Images/Mystic_miles_logo_white.png" class ="img_c">
-
         </div>
+        <div id="overlay"></div>
         <div id="inside_nav">
             <img src="Images/Mystic_miles_logo_black.png" id="logo_nav">
             <span class="close-btn">&times;</span> <!-- the cross symbol inside the hamburger menu-->
@@ -31,17 +31,26 @@
     </nav>
 
     <section id = "rental">
-        <h1>book your rental</h1>
+        <h1 id="rental_heading">book your rental</h1>
         <div id = "book">
             <div id = "form">
                 <img src = "Images/booking_page_bmw.png" id = "booking_page_bmw">
-                <h2 id  = "X3">BMW X3</h2>
-                <div id = "textfields">
-                    <input type="text" placeholder="name" />
-                    <input type="text" placeholder="contact number" />
+                <div id="Edit_btn">
+                    <h2 id  = "X3">BMW X3</h2>
+                    <button id = "edit">EDIT</button>
                 </div>
-                <button id = "confirm">CONFIRM</button>
+                <div id = "textfields">
+                    <input id = "input1" type="text" placeholder="name" required>
+                    <input id = "input2" type="text" placeholder="contact number" required>
+                </div>
+                <button id = "confirm" onclick="checkfunction()">CONFIRM</button>
             </div>
+            <div id="thankyou_page">
+                <h1 id="thankyou">Thank you</h1>
+                <p id="thankyou_p">You will be receiving call from us shortly.</p>
+                <button id="close">CLOSE &times;</button>
+            </div>
+            <div id="blur_rest"></div>
             <div id = "design">
                 <img src = "Images/booking_page_design.png" id = "booking_page_design">
             </div>
