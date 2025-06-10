@@ -32,7 +32,6 @@
     font-family: 'Helvetica-now', sans-serif;
     font-weight: 50;
     font-size: 25px;
-    translate: 0 -30px;
 }
 
 html {
@@ -461,12 +460,13 @@ li:hover .scale_hover {
 }
 
 .who-title {
-    font-family: 'Rische-Bold', sans-serif;
-    font-size: 200px;
+    font-family: 'Rische-semibold', sans-serif;
+    font-size: 240px;
     font-weight: normal;
     color: #0A0908;
     margin-bottom: 40px;
     text-align: center;
+    translate: 0 -120px;
     text-shadow:
     0.5px 0 #EFE9E1, -0.5px 0 #EFE9E1,
     0 0.5px #EFE9E1, 0 -0.5px #EFE9E1;
@@ -490,7 +490,7 @@ li:hover .scale_hover {
     align-items: center;
     gap: 40px;
     flex-flow:row wrap;
-    translate: 0 -170px;
+    translate: 30px -170px;
 }
 
 .car-image {
