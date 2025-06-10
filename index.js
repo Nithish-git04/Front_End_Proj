@@ -1,6 +1,9 @@
 const hamburger = document.getElementById('hamburger_menu');
 const insideNav = document.getElementById('inside_nav');
 const closeBtn = insideNav.querySelector('.close-btn');
+const menuBtn = document.querySelector(".menu_btn");
+const overlay = document.getElementById("overlay");
+const navLinks = document.querySelectorAll('#inside_nav a');
 
 // Open menu on hamburger click
 hamburger.addEventListener('click', () => {
@@ -11,6 +14,26 @@ hamburger.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   insideNav.classList.remove('show');
 });
+
+//close the menu on clicking the link inside the nav bar
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    overlay.classList.remove("show");
+    insideNav.classList.remove("show");
+  });
+});
+
+//activating the overlay div to blur the rest of the window when the nav bar is opened.
+menuBtn.addEventListener("click", () => {
+    insideNav.classList.add("show");
+    overlay.classList.add("show");
+});
+
+closeBtn.addEventListener("click", () => {
+    insideNav.classList.remove("show");
+    overlay.classList.remove("show");
+});
+
 
 // when we scroll past the "get in touch" button, the new one appears in the nav bar
 const getintouch = document.getElementById('get_in_touch_1'); // Get the button.
