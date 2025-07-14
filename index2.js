@@ -62,6 +62,8 @@ function checkfunction() {
 
   thankyou_page.classList.add("show");
   blur_rest.classList.add("show");
+  document.getElementById('input1').value = "";
+  document.getElementById('input2').value = "";
 
 close_btn.addEventListener("click", () => {
     thankyou_page.classList.remove("show");
