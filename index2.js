@@ -40,32 +40,43 @@ closeBtn.addEventListener("click", () => {
 const submit_btn = document.getElementById('confirm');
 const close_btn = document.getElementById('close');
 
-function checkfunction() {
+submit_btn.addEventListener("click", (e)=>{
 
-  const check1 = document.getElementById('input1').value.trim();
-  const check2 = document.getElementById('input2').value.trim();
+  e.preventDefault();
 
-  if(check1 === '' || check2 === '') {
+  const name = document.getElementById('input1').value.trim();
+  const numb = document.getElementById('input2').value.trim();
+
+  if(name === '' || numb === '') {
     alert("Please fill the required details!!");
     return;
   }
   
-  if(!(isNaN(Number(check1)))) {
+  if(!(isNaN(Number(name)))) {
     alert("Please fill valid details!!");
     return;
   }
 
-  if(isNaN(Number(check2))) {
+  if(isNaN(Number(numb))) {
     alert("Please fill valid details!!");
     return;
   }
+
+  fetch("http://localhost:3000/click", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, numb}),
+  })
+    .then((res) => res.json())
+    .then((data) => alert(data.message));
 
   thankyou_page.classList.add("show");
   blur_rest.classList.add("show");
   document.getElementById('input1').value = "";
   document.getElementById('input2').value = "";
 
-close_btn.addEventListener("click", () => {
+  close_btn.addEventListener("click", () => {
     thankyou_page.classList.remove("show");
     blur_rest.classList.remove("show");
-})}
+  });
+});

@@ -1,0 +1,27 @@
+{
+  "name": "front_end_proj",
+  "version": "1.0.0",
+  "description": "This repository is created for a frontend PS-1 project for AE.\r The assets for this webpage is taken from the figma file : https://www.figma.com/design/WxdWvFebOAaxGvYvbp1dll/PS---1-Ashish-Enterprises?node-id=1-1221&t=hzaDrsUWbtBD4Yl3-0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nithish-git04/Front_End_Proj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nithish-git04/Front_End_Proj/issues"
+  },
+  "homepage": "https://github.com/Nithish-git04/Front_End_Proj#readme",
+  "keywords": [],
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.2"
+  }
+}
