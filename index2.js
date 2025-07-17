@@ -65,7 +65,7 @@ submit_btn.addEventListener("click", (e)=>{
   fetch("http://localhost:3000/click", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name, numb}),
+    body: JSON.stringify({name, numb}),
   })
     .then((res) => res.json())
     .then((data) => alert(data.message));
